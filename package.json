@@ -1,5 +1,5 @@
 {
-  "name": "redux-sentry-middleware",
+  "name": "@randy.tarampi/redux-sentry-middleware",
   "version": "0.0.15",
   "description": "Redux middleware for propagating Redux state/actions to use with new @sentry/browser and @sentry/node.",
   "main": "dist/index.cjs.js",
@@ -35,5 +35,8 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }
