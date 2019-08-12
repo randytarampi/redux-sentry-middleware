@@ -31,9 +31,7 @@ const createSentryMiddleware = (Sentry, options = {}) => {
         }
         if (getTags) {
           const tags = getTags(state);
-          Object.keys(tags).forEach(key => {
-            scope.tags = { ...scope.tags, [key]: tags[key] };
-          });
+          scope.setTags(tags);
         }
         return event;
       });
